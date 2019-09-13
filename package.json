@@ -4,8 +4,15 @@
   "description": "",
   "main": "main.js",
   "scripts": {
+    "app": "webpack && electron main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Thom Boyer",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "elm": "^0.19.0-no-deps",
+    "elm-webpack-loader": "^6.0.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8"
+  }
 }
