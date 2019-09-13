@@ -1,9 +1,17 @@
 <html>
+	
   <head>
    <title>This title shows at the top</title>
   </head>
 
   <body>
-    <h2>Hello Electron</h2>
+    <div id='container'></div>
+    <script src="bundle.js"></script>
+    <script>
+        var Elm = require('./bundle.js');
+        var app = Elm.Elm.Main.init({
+            node: document.getElementById('container')
+        });
+    </script>
   </body>
 </html>
